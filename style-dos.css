@@ -1,0 +1,126 @@
+        /* DESKTOP */
+#grilla { display: grid; }
+    
+    @media screen and (min-width: 1024x) {
+    
+#grilla {
+    grid-template-columns: repeat(3, 1fr);
+    }   
+        /* FIN DE DESKTOP */
+} 
+     
+            /* TABLET */
+#grilla { display: grid; }
+        
+    @media screen and (min-width: 768px) {
+    
+#grilla {
+    grid-template-columns: repeat(4, 1fr);
+    }   
+        /* FIN DE TABLET */
+}
+                /* GRID */
+#grilla{
+    display: grid;
+    grid-template-areas:
+    "nav header header"
+    "nav productos publicidad"
+    "nav servicios publicidad"
+    "nav footer footer";
+    color: white;
+    font-style: bold;
+    grid-template-columns: 170px 3fr 3fr 300px;
+    grid-template-rows: 220px 3fr 3fr 300px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 300vh;
+    margin: 0;
+    }
+    
+    .border{
+    border: 4px solid black;
+    background-color: rgb(16, 204, 141);
+    }
+    header{
+    grid-area: header;
+    }
+    
+    footer{
+    grid-area: footer;
+    }
+    section#productos{
+    grid-area: productos;
+    }
+    
+    section#servicios{
+    grid-area: servicios;
+    }
+    nav{
+    grid-area: nav;
+    }
+    .sidebar{
+        text-decoration: none;
+        color: white;
+        font-style: bold;
+        list-style: none;  
+    }
+    aside{
+    grid-area: publicidad;
+    
+}
+            /* FIN DE GRID */
+#grilla{
+    background-image: linear-gradient(to bottom, white, rgb(113, 240, 113));
+}
+
+.face{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.insta{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.principal-adoptar{
+    background-color: rgb(16, 204, 141);
+    color: white;
+}
+#nuestros-animales img{
+    max-width: 250px;
+    min-width: 250px;
+}
+.principal-contacto{
+    margin: 20px;
+    background-color: rgb(16, 204, 141);
+    color: white;
+}
+.principal-donar{
+    margin: 20px;
+    background-color: rgb(16, 204, 141);
+    color: white;
+}
+.dona{
+    justify-content: center;
+    font-style: italic;
+}
+.principal-nosotros{
+    margin: 20px;
+    background-color: rgb(16, 204, 141);
+    color: white;
+}
+.principal-nosotros-dos{
+    margin: 20px;
+    background-color: rgb(16, 204, 141);
+    color: white;
+}
+#personas img{
+    max-width: 200px;
+    min-width: 200px;
+}
+.principal-donde{
+    margin: 20px;
+    background-color: rgb(16, 204, 141);
+    color: white;
+}
